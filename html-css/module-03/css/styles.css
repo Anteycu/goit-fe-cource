@@ -62,3 +62,21 @@ input[type="radio"].visually-hidden {
 .site-navigation a:hover {
     color: #03a9f4;
 }
+
+.menu {
+    width: 615px;
+    margin: auto;
+    padding: 10px 0 10px 40px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.menu-link {
+    display: block;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
