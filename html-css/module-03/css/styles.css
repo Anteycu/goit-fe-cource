@@ -1,0 +1,16 @@
+body {
+    font-family: "PlayfairDisplay", "Arial", sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.site-navigation ul {
+    list-style: none;
+}
+
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+}
