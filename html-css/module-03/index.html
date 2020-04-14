@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nicholas Trunov" />
@@ -12,14 +12,16 @@
     <title>lifestyle</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
+      <h1 class="visually-hidden">Chill with style</h1>
     <header class="page-header">
       <nav class="site-navigation">
         <ul>
-          <li><a class="navigation-effects" href="#lifestyle watch">Lifestyle</a></li>
+          <li><a href="#lifestyle watch">Lifestyle</a></li>
           <li><a href="#photodiary watch">Photodiary</a></li>
           <li><a href="#music watch">Music</a></li>
           <li><a href="#travel watch">Travel</a></li>
@@ -30,12 +32,12 @@
     <main>
         <! 1st lifestyle section>
         <section id="music watch" class="lifestyles">
-            <h2 class="lifestyles-title">About lifestyles</h2>
+            <h2 class="lifestyles-title visually-hidden">About lifestyles</h2>
     
             <ul class="lifestyles-list">
-                <li class="lifestyles list item">
+                <li class="lifestyles-list-item">
                     <img src="img/homework-01.jpg" width="420" height="280" alt="women at music festival" />
-                    <p class="picture name">Lifestyle</p>
+                    <p class="picture-name">Lifestyle</p>
                     <h3>More than just a music festival</h3>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
@@ -60,12 +62,12 @@
     
         <! photodiary secton>
         <section id="photodiary watch" class="photodiaries">
-            <h2 class="photodiaries-title">About photodiaries</h2>
+            <h2 class="photodiaries-title visually-hidden">About photodiaries</h2>
     
             <ul class="photodiary-list">
                     <li class="photodiary-list-item">
                         <img src="img/homework-3.jpg" width="420" height="280" alt="friends near bridge" />
-                        <p class="picture name">Photodiary</p>
+                        <p class="picture-name">Photodiary</p>
                         <h3>American dream</h3>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
@@ -89,13 +91,13 @@
         </section>
     
         <! 2nd lifestyle section>
-    <section class="lifestyles">
-      <h2 class="lifestyles title">About lifestyles again</h2>
+        <section class="lifestyles">
+      <h2 class="lifestyles-title visually-hidden">About lifestyles again</h2>
 
-      <ul class="lifestyles list">
-        <li class="lifestyles list item">
+      <ul class="lifestyles-list">
+        <li class="lifestyles-list-item">
           <img src="#" width="420" height="280" alt="women stay on road" />
-                            <p class="picture name">Lifestyle</p>
+                            <p class="picture-name">Lifestyle</p>
                             <h3>Top 10 songs for running</h3>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
@@ -104,9 +106,9 @@
                                 qui fuga, suscipit sint.
                             </p>
                         </li>
-                        <li class="lifestyles list item">
+                        <li class="lifestyles-list-item">
                             <img src="#" width="419" height="280" alt="winter road" />
-                            <p class="picture name">Lifestyle</p>
+                            <p class="picture-name">Lifestyle</p>
                             <h3>Cold winter days</h3>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
@@ -118,8 +120,8 @@
             </ul>
         </section>
     
-        <button class="button">load more</button>
-</main>
+        <button type="button" class="bottom-button">load more</button>
+    </main>
     <footer></footer>
   </body>
 </html>
