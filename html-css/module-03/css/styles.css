@@ -3,6 +3,8 @@ body {
     color: #626262;
     font-size: 14px;
     line-height: 21px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .site-navigation ul {
@@ -17,6 +19,8 @@ body {
 
 .lifestyles-list {
     list-style: none;
+    display: inline-block;
+    margin: 0px;
 }
 
 .lifestyles-list-item h3 {
@@ -64,19 +68,78 @@ input[type="radio"].visually-hidden {
 }
 
 .menu {
-    width: 615px;
-    margin: auto;
-    padding: 10px 0 10px 40px;
+    padding: 75px 0px 0px 315px;
+    margin-bottom: 105px;
 }
 
 .menu-item {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 120px;
 }
 
-.menu-link {
-    display: block;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+.menu-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.lifestyles-list {
+    padding: 0px 0px 0px 150px;
+}
+
+.lifestyles-list-item {
+    display: inline-block;
+    margin-right: 60px;
+    width: 420px;
+}
+
+.lifestyles-list-item:nth-child(2) {
+    margin-right: 0;
+}
+
+.photodiary-list {
+    padding: 0px 0px 0px 150px;
+    margin: 0px;
+}
+
+.photodiary-list-item {
+    display: inline-block;
+    margin-right: 60px;
+    width: 420px;
+}
+
+.photodiary-list-item:nth-child(2) {
+    margin-right: 0;
+}
+
+.photodiaries {
+    padding-top: 135px;
+    margin-bottom: 140px;
+}
+
+.footer-wrappen {
+    display: inline-block;
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 510px;
+}
+
+.bottom-button {
+    width: 165px;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 70px;
+    margin-right: 530px;
+    display: inline-block;
+}
+
+.picture-name {
+    padding: 30px 0 0 0;
+    margin: 0px;
+}
+
+.textname {
+    margin-bottom: 40px;
+}
+
+p {
+    margin: 0px;
 }
