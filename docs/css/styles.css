@@ -1,121 +1,152 @@
 body {
-    font-family: "Playfair Display", "Arial", sans-serif;
-    color: #626262;
-    font-size: 14px;
-    line-height: 24px;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .container {
-    width: 900px;
-    margin: 0 auto;
+  width: 900px;
+  margin: 0 auto;
 }
 
 .page-header {
-    padding-top: 70px;
-    margin-bottom: 100px;
+  padding-top: 70px;
+  margin-bottom: 100px;
 }
 
 .site-navigation ul {
-    list-style: none;
+  list-style: none;
 }
 
 .site-navigation a {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: #626262;
 }
 
 .site-navigation a:hover {
-    color: #03a9f4;
+  color: #03a9f4;
+}
+
+.site-navigation a:visited:hover {
+  color: #03a9f4;
+}
+
+.site-navigationa: a {
+
 }
 
 .site-navigation {
-    padding-left: 160px;
+  padding-left: 160px;
 }
 
 .lifestyles-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  margin-bottom: 55px;
+  text-align: left;
 }
 
 .lifestyles-list-item h3 {
-    font-size: 30px;
-    line-height: 36px;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .picture-name {
-    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #b4ad9e;
-    line-height: 17px;
-    margin-bottom: 20px;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  line-height: 17px;
+  margin-bottom: 20px;
 }
 
 .menu {
-    padding: 0;
-    margin: 0;
-    font-size: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
 }
 
 .menu-item {
-    display: inline-block;
-    font-size: 14px;
-    margin-right: 110px;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 110px;
 }
 
 .menu-item:nth-child(4) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .lifestyles-list-item {
-    display: inline-block;
-    margin-right: 60px;
-    width: 420px;
+  display: inline-block;
+  margin-right: 60px;
+  width: 420px;
+  margin-bottom: 135px;
 }
 
 .lifestyles-list-item:nth-child(2n) {
-    margin-right: 0;
+  margin-right: 0;
+}
+
+.lifestyles-list-item:nth-child(5) {
+  margin-bottom: 0;
+}
+
+.lifestyles-list-item:nth-child(6) {
+  margin-bottom: 0;
 }
 
 .textname {
-    margin: 0;
-    margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 p {
-    margin: 0px;
-    font-size: 14px;
-    margin-bottom: 135px;
+  margin: 0px;
+  font-size: 14px;
 }
 
 img {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .bottom-button {
-    width: 165px;
-    height: 65px;
-    font-size: 20px;
-    line-height: 24px;
+  width: 165px;
+  height: 65px;
+  border-width: thin;
+  background-color: transparent;
+  border-style: line;
+  border-color: #626262;
+  font-size: 20px;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  color: #626262;
+  line-height: 24px;
+  margin-bottom: 70px;
+  display: inline-block;
+}
+
+.lifestyles {
+  text-align: center;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    clip-path: insert(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
