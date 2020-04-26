@@ -1,0 +1,53 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: insert(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #515151;
+}
+
+.container {
+    width: 1110px;
+}
+
+.logo {
+    float: left;
+}
+
+.menu {
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.navigation {
+    clearfix
+}
