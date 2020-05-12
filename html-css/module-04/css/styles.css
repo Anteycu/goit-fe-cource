@@ -97,8 +97,8 @@ body {
 .section-title::after {
   content: "";
   width: 165px;
-  height: 9px;
-  background-color: #1abc9c;
+  height: 7px;
+  background-color: #4ec6ab;
   display: block;
   margin: 0 auto;
 }
@@ -122,12 +122,19 @@ body {
   margin-right: 0px;
 }
 
+.fetured-list li:hover {
+  background-color: #e9f0fd;
+}
+
 .link-text h3 {
-  width: 202px;
+  width: 187px;
   margin: 0;
   float: left;
-  background-color: #323232
-  color: #ffffff
+  background-color: #323232;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-size: 18px;
 }
 
 .link-text p {
@@ -136,6 +143,7 @@ body {
   float: left;
   background-color: #8c8c8c;
   color: #ffffff;
+  text-align: center;
 }
 
 .link-img {
@@ -145,6 +153,14 @@ body {
 
 .link-text {
   line-height: 40px;
+}
+
+.link-text h3:hover {
+  background-color: #1abc9c;
+}
+
+.link-text p:hover {
+  background-color: #7fd9c7;
 }
 
 .news-list {
@@ -168,15 +184,37 @@ body {
 .news-list h4 {
   margin: 0px;
   padding-top: 15px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+  color: #555252;
+}
+
+.news-list h4::after {
+  content: "";
+  width: 135px;
+  height: 4px;
+  background-color: #4ec6ab;
+  display: block;
+  margin-top: 10px;
 }
 
 .news-list p {
   margin: 0px;
-  padding-top: 45px;
+  padding-top: 25px;
   margin-bottom: 15px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #555252;
+  font-weight: 400;
 }
 
 .read-more-button {
   width: 160px;
   height: 55px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #4ec6ab;
 }
