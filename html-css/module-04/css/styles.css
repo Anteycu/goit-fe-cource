@@ -153,12 +153,12 @@ body {
 }
 
 .futered-list-item:hover .link-text h3,
-.futered-list-item:focus .category {
+.futered-list-item:focus {
   background-color: #1ABC9C;
 }
 
 .futered-list-item:hover .link-text p,
-.futered-list-item:focus .category {
+.futered-list-item:focus {
   background-color: #7fd9c7;
 }
 
