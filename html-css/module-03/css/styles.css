@@ -39,7 +39,7 @@ body {
 }
 
 .site-navigation {
-  padding-left: 160px;
+  text-align: center;
 }
 
 .lifestyles-list {
@@ -125,12 +125,12 @@ img {
   font-family: "Playfair Display", "Arial", sans-serif;
   color: #626262;
   line-height: 24px;
-  margin-bottom: 70px;
   display: inline-block;
 }
 
 .lifestyles {
   text-align: center;
+  padding-bottom: 70px;
 }
 
 .visually-hidden:not(:focus):not(:active),
