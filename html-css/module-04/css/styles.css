@@ -122,10 +122,6 @@ body {
   margin-right: 0px;
 }
 
-.fetured-list li:hover {
-  background-color: #e9f0fd;
-}
-
 .link-text h3 {
   width: 187px;
   margin: 0;
@@ -153,13 +149,16 @@ body {
 
 .link-text {
   line-height: 40px;
+  display: block;
 }
 
-.link-text h3:hover {
-  background-color: #1abc9c;
+.futered-list-item:hover .link-text h3,
+.futered-list-item:focus .category {
+  background-color: #1ABC9C;
 }
 
-.link-text p:hover {
+.futered-list-item:hover .link-text p,
+.futered-list-item:focus .category {
   background-color: #7fd9c7;
 }
 
