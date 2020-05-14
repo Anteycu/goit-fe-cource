@@ -12,7 +12,7 @@ body {
 
 .page-header {
   padding-top: 70px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .site-navigation ul {
@@ -34,9 +34,7 @@ body {
   color: #03a9f4;
 }
 
-.site-navigationa: a {
-
-}
+.site-navigationa: a {}
 
 .site-navigation {
   text-align: center;
@@ -126,6 +124,14 @@ img {
   color: #626262;
   line-height: 24px;
   display: inline-block;
+}
+
+.bottom-button:hover {
+  color: #03a9f4;
+}
+
+.bottom-button:focus {
+  border: solid 1px #03a9f4;
 }
 
 .lifestyles {
