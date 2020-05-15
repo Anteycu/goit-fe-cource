@@ -1,0 +1,21 @@
+body {
+    font-family: "PlayFair Display", sans-serif;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-list-item {
+    display: inline-block;
+}
+
+.menu-links {
+    text-decoration: none;
+}
+
+.menu-links:hover {
+    color: #c6c3b5;
+}
