@@ -1,4 +1,97 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 body {
   font-family: "Josefine Sans", sans-serif;
   font-size: 17px;
+  line-height: 22px;
+}
+
+nav {
+  background-color: #e74c3c;
+  height: 100px;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu-list {
+  list-style: none;
+  display: inline-block;
+  font-size: 0px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 50px;
+  font-size: 17px;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+  color: #c6c3b5;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-name {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 900;
+}
+
+.team-title {
+  color: #e74c3c;
+  font-size: 19px;
+}
+
+.team-social-item {
+  list-style: none;
+}
+
+.team-social-item a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #e74c3c;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list-item {
+  font-size: 19px;
+}
+
+.share-contact {
+  list-style: none;
+}
+
+.share-contact-links a {
+  text-decoration: none;
+}
+
+.bottom-button {
+  width: 250px;
+  height: 50px;
+}
+
+.button-link {
+  text-decoration: none;
 }
