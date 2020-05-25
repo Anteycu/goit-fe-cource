@@ -28,6 +28,7 @@ img {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  font-weight: 400;
   line-height: 24px;
   color: #999999;
 }
@@ -46,14 +47,53 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #95e1d3;
 }
 
 .menu {
   display: flex;
 }
 
+.menu-list {
+  display: flex;
+}
+
 .menu-list:not(:first-child) {
   margin-left: 56px;
+}
+
+.menu-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #95e1d3;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.menu-link::after {
+  content: "";
+  background-color: rgb(243, 129, 129);
+  width: 50px;
+  height: 3px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 200ms linear;
+}
+
+.menu-list:hover .menu-link::after {
+  visibility: visible;
+  opacity: 1;
 }
 
 .sections {
@@ -64,6 +104,29 @@ body {
 .section-title {
   text-align: center;
   margin-bottom: 62px;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.section-title::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin-top: 40px;
+}
+
+.section-decoration {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
 }
 
 .services {
@@ -72,18 +135,71 @@ body {
   justify-content: space-around;
 }
 
-.services-list-items {
-  flex-basis: 328px;
+.services-item-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 383px;
   /*margin-right: 82px;*/
   margin-bottom: 98px;
 }
 
-.services-list-items:nth-child(3n) {
+.services-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.services-list-item-title {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.services-list-item-description {
+}
+
+.services-item-wrap:nth-child(3n) {
   margin-right: 0px;
 }
 
-.services-list-items:nth-child(n + 4) {
+.services-item-wrap:nth-child(n + 4) {
   margin-bottom: 0px;
+}
+
+.services-item-wrap::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.alarm::before {
+  background-image: url(../img/ALARM.png);
+}
+
+.line::before {
+  background-image: url(../img/LINE_GRAPH.png);
+}
+
+.computer::before {
+  background-image: url(../img/COMPUTER___OK.png);
+}
+
+.book::before {
+  background-image: url(../img/BOOK_2.png);
+}
+
+.home::before {
+  background-image: url(../img/HOME.png);
+}
+
+.image::before {
+  background-image: url(../img/IMAGE.png);
 }
 
 .team-section-description {
@@ -123,11 +239,38 @@ body {
 
 .team-social-list {
   display: flex;
+  background-color: rgb(252, 227, 138);
 }
 
 .team-social-list-item {
+}
+
+.team-social-link {
+  display: block;
   width: 56px;
   height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team-social-link:hover {
+  background-color: #95e1d3;
+}
+
+.team-social-link-fb {
+  background-image: url(../img/fb.png);
+}
+
+.team-social-link-twt {
+  background-image: url(../img/twt.png);
+}
+
+.team-social-link-pnt {
+  background-image: url(../img/pnt.png);
+}
+
+.team-social-link-inst {
+  background-image: url(../img/inst.png);
 }
 
 .team-name {
@@ -135,6 +278,20 @@ body {
   justify-items: center;*/
   padding-top: 30px;
   margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14;
+  line-height: 17px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.team-title {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
 }
 
 .footer-wrapper {
@@ -142,6 +299,18 @@ body {
   justify-content: space-between;
   min-height: 63px;
   align-items: center;
+}
+
+.author {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.author-name {
+  color: #f38181;
 }
 
 .button-wrapper {
