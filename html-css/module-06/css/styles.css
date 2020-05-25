@@ -79,6 +79,11 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    color: rgb(243, 129, 129);
 }
 
 .menu-link::after {
@@ -89,6 +94,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 200ms linear;
+    margin: 13px 0 0 0;
 }
 
 .menu-list:hover .menu-link::after {
@@ -112,6 +118,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     color: #333333;
+    text-transform: uppercase;
 }
 
 .section-title::before {
@@ -127,6 +134,8 @@ body {
     font-size: 24px;
     line-height: 29px;
     color: #333333;
+    text-transform: none;
+    margin: 0 0 18px 0;
 }
 
 .services {
@@ -158,8 +167,6 @@ body {
     color: #333333;
     text-transform: uppercase;
 }
-
-.services-list-item-description {}
 
 .services-item-wrap:nth-child(3n) {
     margin-right: 0px;
@@ -214,16 +221,18 @@ body {
 }
 
 .team-list-item {
-    width: 379px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    min-width: 379px;
+    text-align: center;
+}
+
+.team-list-item-wrapper {
+    width: 100%;
     position: relative;
 }
 
 .overlay {
-    width: 380px;
-    height: 470px;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(0deg,
             rgba(252, 227, 138, 0.9) 0%,
             rgba(243, 129, 129, 0.9) 100%);
@@ -243,6 +252,11 @@ body {
     background-color: rgb(252, 227, 138);
 }
 
+.team-social-list-item {
+    min-width: 56px;
+    min-height: 56px;
+}
+
 .team-list-item:hover .overlay {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
@@ -260,8 +274,8 @@ body {
 
 .team-social-link {
     display: block;
-    width: 56px;
-    height: 56px;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -287,8 +301,6 @@ body {
 }
 
 .team-name {
-    /*display: flex;
-  justify-items: center;*/
     padding-top: 30px;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
@@ -360,7 +372,7 @@ body {
 }
 
 .subscribe-button {
-    width: 150px;
+    min-width: 150px;
     min-height: 40px;
     background-color: rgb(149, 225, 211);
     border-color: transparent;
