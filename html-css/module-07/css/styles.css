@@ -100,7 +100,7 @@ body {
 
 .page-header {
   display: flex;
-  padding-bottom: 70px;
+  padding-bottom: 6px;
   padding-top: 42px;
 }
 
@@ -147,8 +147,7 @@ body {
 }
 
 .sections {
-  padding-top: 70px;
-  padding-bottom: 0px;
+  padding-top: 105px;
 }
 
 .section-title {
@@ -163,6 +162,7 @@ body {
   line-height: 48px;
   color: #222222;
   text-transform: uppercase;
+  margin: 0 0 6px 0;
 }
 
 .section-description {
@@ -172,27 +172,27 @@ body {
   color: #333333;
   text-transform: none;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 0 52px 0;
 }
 
 .services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 104px;
 }
 
 .services-item-wrap {
   display: flex;
-  justify-content: space-evenly;
-  flex-basis: 383px;
-  /*margin-right: 82px;*/
-  margin-bottom: 98px;
+  flex-flow: column wrap;
+  align-items: center;
+  flex-basis: 280px;
 }
 
 .services-list-items {
   display: flex;
-  flex-wrap: wrap;
-  width: 300px;
+  flex-flow: column wrap;
+  text-align: center;
 }
 
 .services-list-item-title {
@@ -203,14 +203,11 @@ body {
   line-height: 17px;
   color: #333333;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .services-item-wrap:nth-child(3n) {
   margin-right: 0px;
-}
-
-.services-item-wrap:nth-child(n + 4) {
-  margin-bottom: 0px;
 }
 
 .services-item-wrap::before {
