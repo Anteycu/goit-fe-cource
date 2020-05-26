@@ -28,73 +28,97 @@
       <section class="sections container">
         <h2 class="section-title">Services</h2>
         <p class="section-description">
-          Proin iaculis purus consequat sem cure. 
+          Proin iaculis purus consequat sem cure.
         </p>
         <ul class="services">
-          <li class="services-item-wrap alarm">
-            <div class="services-list-items">
+          <li class="services-list-items">
+            <div class="services-item-wrap basket">
               <h3 class="services-list-item-title">E-Commerce</h3>
               <p class="services-list-item-description">
-                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
               </p>
             </div>
           </li>
-          <li class="services-item-wrap line">
-            <div class="services-list-items">
+          <li class="services-list-items">
+            <div class="services-item-wrap laptop">
               <h3 class="services-list-item-title">Responsive Web</h3>
               <p class="services-list-item-description">
-                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
               </p>
             </div>
           </li>
-          <li class="services-item-wrap computer">
-            <div class="services-list-items">
+          <li class="services-list-items">
+            <div class="services-item-wrap locked">
               <h3 class="services-list-item-title">Web Security</h3>
               <p class="services-list-item-description">
-                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
               </p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="sections">
+      <section class="sections banner">
         <div class="container">
-        <h2 class="section-title">Contact us</h2>
-        <p class="team-section-description">
-          Proin iaculis purus consequat sem cure. 
-        </p>
-        <div class="button-wrapper">
-          <ul>
-            <li>
-          <input
-            class="input-for-email"
-            type="email"
-            placeholder="Your Email..."
-          />
-        </li>
-          <li>
-          <input
-            class="input-for-email"
-            type="email"
-            placeholder="Your Email..."
-          />
-        </li>
-        <li>
-          <input
-            class="input-for-email"
-            type="email"
-            placeholder="Your Email..."
-          />
-        </li>
-      </ul>
-          <input
-            class="input-for-email"
-            type="email"
-            placeholder="Your Email..."
-          />
+          <h2 class="section-title contact-us-title">Contact us</h2>
+          <p class="section-description">
+            Proin iaculis purus consequat sem cure.
+          </p>
+          <form action="#" method="GET">
+            <div class="inputs-wrapper">
+              <ul class="inputs-list">
+                <li class="inputs-list-item">
+                  <label for="your-name"></label>
+                  <input
+                    id="your-name"
+                    name="user-name"
+                    class="input name"
+                    required
+                    type="text"
+                    placeholder="Your Name &#42;"
+                  />
+                </li>
+                <li class="inputs-list-item">
+                  <label for="your-email"></label>
+                  <input
+                    id="your-email"
+                    name="user-email"
+                    class="input email"
+                    required
+                    type="email"
+                    placeholder="Your Email &#42;"
+                  />
+                </li>
+                <li class="inputs-list-item">
+                  <label for="your-subject"></label>
+                  <input
+                    id="your-subject"
+                    name="user-subject"
+                    class="input subject"
+                    type="text"
+                    placeholder="Subject"
+                  />
+                </li>
+              </ul>
+              <label for="your-message"></label>
+              <textarea
+                id="your-message"
+                name="user-message"
+                class="input message"
+                required
+                placeholder="Your Message &#42;"
+              ></textarea>
+            </div>
+            <button class="send-button" type="submit" value="send">
+              Send message
+            </button>
+          </form>
         </div>
-        <button class="subscribe-button" type="submit">Subscribe</button>
-      </div>
       </section>
     </main>
   </body>
