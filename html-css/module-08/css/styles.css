@@ -98,6 +98,12 @@ body {
   margin-bottom: 116px;
 }
 
+@media (max-width: 767px) {
+  .menu-list {
+    margin-bottom: 116px;
+  }
+}
+
 .enter {
   min-width: 94px;
   min-height: 40px;
@@ -147,11 +153,16 @@ header {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.8px;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .share-dreams-title {
+    letter-spacing: -0.8px;
+  }
 }
 
 .share-dreams-description {
@@ -161,21 +172,31 @@ header {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
-  letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .share-dreams-description {
+    letter-spacing: 1px;
+  }
 }
 
 .find-partner-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   color: #ffffff;
   border-radius: 20px;
   background-color: rgb(255, 78, 80);
-  width: 280px;
+  max-width: 280px;
   height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.find-partner-button:focus {
+  filter: invert(100%);
 }
 
 .section-meet-partner {
@@ -273,9 +294,7 @@ header {
 }
 
 .other-partners-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 78, 80);
@@ -287,4 +306,34 @@ header {
   font-size: 14px;
   line-height: 1.2;
   color: #ff4e50;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.other-partners-button:focus {
+  filter: invert(100%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 492px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 942px;
+  }
 }
