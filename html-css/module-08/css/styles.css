@@ -239,9 +239,8 @@ header {
 
 .img-wrapper {
   position: relative;
-  margin-bottom: 24px;
   max-width: 122px;
-  margin: 0 auto;
+  margin: 0 auto 22px;
 }
 
 .partner-img {
@@ -366,8 +365,10 @@ header {
     margin-bottom: 40px;
   }
 
-  .partner-list-item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 60px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .partner-list-item:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 60px;
+    }
   }
 
   .share-dreams-title {
