@@ -1,87 +1,214 @@
 @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Montserrat Regular"), local('Monserrat-Regular') url("../fonts/montserrat-v14-latin-regular.woff") format("woff"),
-        url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2");
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"),
+    local("Monserrat-Regular") url("../fonts/montserrat-v14-latin-regular.woff")
+      format("woff"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Montserrat Bold"), local("Montserrat-Bold"),
-        url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/montserrat-v14-latin-700.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-300 - latin */
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'),
-        url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/roboto-v20-latin-300.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-regular - latin */
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'),
-        url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/roboto-v20-latin-regular.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .container {
-    min-width: 320px;
-    margin: 0 auto;
+  max-width: 282px;
+  margin: 0 auto;
 }
 
 .meet-partner-banner {
-    background-image: url(../img/section\ background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(../img/section\background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.enter {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  min-width: 94px;
+  min-height: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.share-dreams-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.share-dreams-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.find-partner-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+  width: 280px;
+  height: 40px;
+}
+
+.meet-partner-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #333333;
+  text-align: center;
+}
+
+.partner-list-item {
+  width: 221px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.partner-img {
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.img-wrapper::before {
+  display: block;
+  content: "";
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-image: url(../img/1st\shape.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 78, 80);
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.partner-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.partner-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #666666;
+}
+
+.other-partners-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 78, 80);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 283px;
+  height: 43px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ff4e50;
 }
