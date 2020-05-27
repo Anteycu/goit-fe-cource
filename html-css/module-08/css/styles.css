@@ -77,45 +77,81 @@ body {
 }
 
 .container {
-  max-width: 282px;
+  max-width: 280px;
   margin: 0 auto;
 }
 
 .meet-partner-banner {
-  background-image: url(../img/section\background.jpg);
+  background-image: url(../img/section-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.navigation {
+  padding-top: 20px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 116px;
+}
+
 .enter {
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(255, 255, 255);
-  border-radius: 50px;
   min-width: 94px;
   min-height: 40px;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.passive-border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.enter:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50px;
 }
 
 .logo {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 1px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+}
+
+.hero {
+  padding-top: 225px;
+  padding-bottom: 140px;
 }
 
 .share-dreams-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: -0.8px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .share-dreams-description {
@@ -123,6 +159,9 @@ body {
   font-weight: 300;
   line-height: 1.2;
   color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .find-partner-button {
@@ -139,20 +178,28 @@ body {
   height: 40px;
 }
 
+.section-meet-partner {
+  padding-bottom: 60px;
+  padding-top: 74px;
+}
+
 .meet-partner-title {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
   color: #333333;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .partner-list-item {
   width: 221px;
+  margin: 0 auto;
 }
 
 .img-wrapper {
   position: relative;
+  margin-bottom: 24px;
 }
 
 .partner-img {
@@ -160,6 +207,7 @@ body {
   border-width: 4px;
   border-color: rgb(255, 255, 255);
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 .img-wrapper::before {
@@ -169,11 +217,8 @@ body {
   border-width: 4px;
   border-color: rgb(255, 255, 255);
   border-radius: 50%;
-  background-image: url(../img/1st\shape.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgb(255, 78, 80);
   width: 37px;
   height: 37px;
   position: absolute;
@@ -181,11 +226,33 @@ body {
   right: 0;
 }
 
+.TV-icon::before {
+  background-image: url(../img/1st-shape.png);
+  background-color: rgb(255, 78, 80);
+}
+
+.jar-icon::before {
+  background-image: url(../img/2nd-shape.png);
+  background-color: rgb(255, 165, 7);
+}
+
+.cup-icon::before {
+  background-image: url(../img/3d-shape.png);
+  background-color: rgb(28, 215, 173);
+}
+
+.paper-icon::before {
+  background-image: url(../img/4th-shape.png);
+  background-color: rgb(78, 115, 219);
+}
+
 .partner-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .partner-description {
@@ -194,6 +261,15 @@ body {
   font-weight: 300;
   line-height: 1.2;
   color: #666666;
+  text-align: center;
+}
+
+.partner-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.partner-list {
+  margin-bottom: 30px;
 }
 
 .other-partners-button {
