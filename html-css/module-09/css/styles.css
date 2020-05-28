@@ -295,60 +295,61 @@ header {
 
 .partner-link__item:focus {
     filter: invert(100%);
+}
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-        .header {
-            padding-top: 40px;
-        }
-
-        .menu {
-            padding-right: 5px;
-        }
-
-        .logo {
-            padding-left: 5px;
-        }
-
-        .meet__partner-list {
-            margin-bottom: 40px;
-        }
-
-        .share__title {
-            margin-bottom: 40px;
-            font-size: 52px;
-        }
-
-        .share__description {
-            margin-bottom: 40px;
-            font-size: 24px;
-        }
-
-        .hero {
-            padding-bottom: 235px;
-        }
-
-        .meet {
-            padding-bottom: 40px;
-        }
-
-        .meet__title-item {
-            margin-bottom: 35px;
-        }
+    header {
+        padding-top: 40px;
     }
 
-    @media (min-width: 768px) and (max-width: 991px) {
-        .meet__partner-list-item:not(:nth-last-child(-n + 2)) {
-            margin-bottom: 60px;
-        }
+    .menu {
+        padding-right: 5px;
     }
 
-    @media (min-width: 992px) {
-        .meet {
-            padding-bottom: 75px;
-        }
-
-        .share__title {
-            margin: 0 auto 40px;
-        }
+    .logo {
+        padding-left: 5px;
     }
+
+    .meet__partner-list {
+        margin-bottom: 40px;
+    }
+
+    .share__title {
+        margin-bottom: 40px;
+        font-size: 52px;
+    }
+
+    .share__description {
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    .hero {
+        padding-bottom: 235px;
+    }
+
+    .meet {
+        padding-bottom: 40px;
+    }
+
+    .meet__title-item {
+        margin-bottom: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .meet__partner-list-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .meet {
+        padding-bottom: 75px;
+    }
+
+    .share__title {
+        margin: 0 auto 40px;
+    }
+}
