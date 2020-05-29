@@ -106,6 +106,7 @@ body {
   background-color: transparent;
   border: none;
   outline: none;
+  letter-spacing: 1px;
 }
 
 .passive-border {
@@ -136,6 +137,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 header {
@@ -166,6 +168,10 @@ header {
   text-align: center;
 }
 
+.share__span {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .share-dreams-title {
     letter-spacing: -0.8px;
@@ -179,12 +185,12 @@ header {
   line-height: 1.2;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
   .share-dreams-description {
     letter-spacing: 1px;
-    margin-bottom: 20px;
   }
 }
 
@@ -212,24 +218,13 @@ header {
   padding-top: 74px;
 }
 
-@media (max-width: 767px) {
-  .section-meet-partner {
-    padding-bottom: 60px;
-  }
-}
-
 .meet-partner-title {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
   color: #333333;
   text-align: center;
-}
-
-@media (max-width: 767px) {
-  .meet-partner-title {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .partner-list-item {
@@ -304,14 +299,8 @@ header {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .partner-list-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  .partner-list {
-    margin-bottom: 30px;
-  }
+.partner-list {
+  margin-bottom: 30px;
 }
 
 .other-partners-button {
@@ -336,6 +325,12 @@ header {
   filter: invert(100%);
 }
 
+@media (max-width: 767px) {
+  .partner-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 492px;
@@ -346,15 +341,16 @@ header {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding-top: 40px;
+    align-items: baseline;
   }
 
   .menu-list {
-    position: relative;
+    transform: translateX(85px);
     /*right: -19.1%;*/
   }
 
   .logo {
-    position: relative;
+    transform: translateX(-85px);
     /*left: -17.68%;*/
   }
 
@@ -363,12 +359,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .partner-list-item:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 60px;
-    }
   }
 
   .share-dreams-title {
@@ -384,6 +374,7 @@ header {
 
   .hero {
     padding-bottom: 235px;
+    background-image: url(../img/section-background-768.jpg);
   }
 
   .section-meet-partner {
@@ -395,9 +386,19 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .partner-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 60px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 942px;
+  }
+
+  .hero {
+    background-image: url(../img/section-background-1200.jpg);
   }
 
   .section-meet-partner {
