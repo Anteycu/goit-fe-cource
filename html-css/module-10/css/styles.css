@@ -52,6 +52,22 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 192dpi) {
+  .header {
+    display: block;
+    padding-bottom: 230px;
+    padding-top: 26px;
+    background: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../img/imgretina/picture@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .header__wrap {
   display: flex;
   justify-content: space-between;
@@ -310,7 +326,7 @@ body {
 }
 
 .team__item {
-  min-width: 379px;
+  width: 379px;
   text-align: center;
 }
 
